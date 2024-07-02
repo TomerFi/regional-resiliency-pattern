@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger
 ---
@@ -23,7 +23,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-sa
   namespace: regional-dr-trigger
@@ -38,7 +38,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-monitoring-role
 rules:
@@ -83,7 +83,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-role
 rules:
@@ -142,7 +142,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-monitoring-rb
 roleRef:
@@ -164,7 +164,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-rb
 roleRef:
@@ -186,7 +186,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-metrics-service
   namespace: regional-dr-trigger
@@ -209,7 +209,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-operator
   namespace: regional-dr-trigger
@@ -261,7 +261,7 @@ spec:
             - --leader-election
             - --probe-address=:8081
             - --metric-address=127.0.0.1:8080
-          image: quay.io/ecosystem-appeng/regional-dr-trigger-operator:0.1.0
+          image: quay.io/ecosystem-appeng/regional-dr-trigger-operator:0.2.0
           imagePullPolicy: Always
           livenessProbe:
             httpGet:
@@ -302,7 +302,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: regional-dr-trigger-operator
     app.kubernetes.io/part-of: regional-dr-trigger-operator
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.2.0
     helm.sh/chart: regional-dr-trigger-operator-1.0.0
   name: regional-dr-trigger-sm
   namespace: regional-dr-trigger

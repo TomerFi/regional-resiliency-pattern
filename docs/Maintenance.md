@@ -13,9 +13,12 @@ with the updated values. Check your ExternalSecrets and its refreshing period.
 
 ## Update Regional DR Trigger Operator
 
-The _Regional DR Operator_ chart is in [charts/hub/rdrtrigger][target-chart]. We use
+The following doesn't work as expected, it looks like the original commit was overridden in merge;
+please update manually until this is investigated and resolved.
+
+~~The _Regional DR Operator_ chart is in [charts/hub/rdrtrigger][target-chart]. We use
 [git subtree][subtree], our target is the [original chart][rdrtrigger].
-We can update it using the following command:
+We can update it using the following command:~~
 
 ```shell
 # replace ref with the target reference
