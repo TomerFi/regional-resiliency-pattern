@@ -50,7 +50,7 @@ regionalDR:
           apiVersion: v1
           metadata:
             name: ocp-primary
-          baseDomain: example-domain.com
+          baseDomain: apps.dusan-lab.fsi-partner.rhecoeng.com
           controlPlane:
             name: master
             replicas: 3
